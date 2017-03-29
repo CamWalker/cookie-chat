@@ -31,3 +31,9 @@ p{
   margin: 3px 0;
   font-size: 17px;
 }
+
+.single-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
