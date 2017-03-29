@@ -26,9 +26,8 @@ angular.module('chatroom').controller('mainCtrl', function($scope, messageServic
 
 
 
-  $scope.deleteMessage = function(index) {
-    $scope.messages.splice(index, 1)
-    messageService.deleteMessage($scope.messages).then(function (response) {
+  $scope.deleteMessage = function(message) {
+    messageService.deleteMessage(message).then(function (response) {
       console.log('It worked');
     })
   }
